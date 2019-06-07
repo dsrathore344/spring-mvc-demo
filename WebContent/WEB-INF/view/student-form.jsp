@@ -13,7 +13,15 @@
 		<br><br>
 		Last Name: <form:input path="lastName"/>		<!-- this will call student class getLastName -->
 		<br><br>
-		<input type="submit" value="Submit">			<!-- this will call student class setter methods -->
+		Country: 
+		<form:select path="country">
+			<form:option value="India" label="India"/>
+			<form:option value="France" label="France"/>
+			<form:option value="Brazil" label="Brazil"/>
+			<form:option value="Germany" label="Germany"/>
+		</form:select>
+		<br><br>
+		<input type="submit" value="submit">			<!-- this will call student class setter methods -->
 	</form:form>
 </body>
 </html>
